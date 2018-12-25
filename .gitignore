@@ -1,1 +1,5 @@
 bin/
+lib/
+share/
+lib64/
+include/
