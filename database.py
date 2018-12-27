@@ -6,8 +6,8 @@ from sqlalchemy.orm import relationship
 Base = declarative_base()
 
 books_authors = Table('books_authors', Base.metadata,
-                      Column('bookId', Integer, ForeignKey('books.id')),
-                      Column('authorId', Integer, ForeignKey('authors.id'))
+                      Column('bookId', Integer, ForeignKey('books.id'), primary_key = True),
+                      Column('authorId', Integer, ForeignKey('authors.id'), primary_key = True)
                     )
 
 
@@ -18,7 +18,6 @@ class Book(Base):
     title = Column(String(255))
     isbn = Column(String(17))
     publicationYear = Column(YEAR)
-    FK_author = Column(Integer, ForeignKey('authors.id'), nullable = False)
     FK_collection = Column(Integer, ForeignKey('collections.id'),
                            nullable = False)
 
