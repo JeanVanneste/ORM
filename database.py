@@ -1,14 +1,15 @@
-from sqlalchemy import Column, Integer, String, ForeignKey, Table
+from sqlalchemy import Column, Integer, String, ForeignKey, Table, create_engine
 from sqlalchemy.dialects.mysql import YEAR
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import relationship
 
 Base = declarative_base()
+
 books_authors = Table('books_authors', Base.metadata,
                       Column('bookId', Integer, ForeignKey('books.id')),
                       Column('authorId', Integer, ForeignKey('authors.id'))
                     )
-Base.metadata.create_all(engine)
+
 
 class Book(Base):
     __tablename__ = 'books'
@@ -71,3 +72,7 @@ class Author(Base):
                            "books",
                            secondary=books_authors,
                            back_populates="books")
+
+engine = create_engine(
+    'mysql+pymysql://jean:mcsuaptesbuf@localhost/library', echo = False)
+Base.metadata.create_all(engine)
