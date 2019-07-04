@@ -21,12 +21,12 @@ class Book(Base):
     FK_collection = Column(Integer, ForeignKey('collections.id'),
                            nullable = False)
 
-    collection = relationship("collection", back_populates = "collections")
+    collection = relationship("Collection", back_populates = "booksPublished")
 
     authors = relationship(
-                           "authors",
+                           "Author",
                            secondary=books_authors,
-                           back_populates="authors")
+                           back_populates="books")
 
     def __repr__(self):
         return ("<Book(title='%s')>" % self.title)
@@ -38,8 +38,8 @@ class Editor(Base):
     name = Column(String(30), nullable=False)
     fondationYear = Column(Integer, nullable=False)
 
-    collectionsPossessed = relationship("collection",
-                                        back_populates = "collections")
+    collectionsPossessed = relationship("Collection",
+                                        back_populates = "editor")
 
     def __repr__(self):
         return "<Editor(name='%s', year of fondation = '%d')" % (
@@ -52,9 +52,9 @@ class Collection(Base):
     name = Column(String(100), nullable=False)
     FK_editor = Column(Integer, ForeignKey('editors.id'), nullable=False)
 
-    editor = relationship("editor", back_populates = "editors")
+    editor = relationship("Editor", back_populates = "collectionsPossessed")
 
-    booksPublished = relationship("book", back_populates = "books")
+    booksPublished = relationship("Book", back_populates = "collection")
 
     def __repr__(self):
         return "<Collection(name='%s', editor='%s')" % (self.name,
@@ -68,9 +68,9 @@ class Author(Base):
     lastName = Column(String(30), nullable=False)
 
     books = relationship(
-                           "books",
+                           "Book",
                            secondary=books_authors,
-                           back_populates="books")
+                           back_populates="authors")
 
 engine = create_engine(
     'mysql+pymysql://jean:mcsuaptesbuf@localhost/library', echo = False)
