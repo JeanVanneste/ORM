@@ -1,4 +1,7 @@
 create_author('Nicolas', 'Dupuy')
 create_editor('First', 2001)
-create_collection('First', 2001)
+create_collection('First', 'First')
 create_book('Les 100 meilleurs albums de rock', '978-2-7540-1144-0', 2010, 'First', 'Nicolas', 'Dupuy')
+create_collection('For Dummies', 'First')
+create_author('Mark', 'Phillips')
+create_author('Jon', 'Chappell')
