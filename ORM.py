@@ -7,7 +7,7 @@ engine = create_engine('mysql+pymysql://jean:mcsuaptesbuf@localhost/library', ec
 Session = sessionmaker(engine)
 
 
-def create_editor(editorName, fondationYear):
+def editor_create(editorName, fondationYear):
     session = Session()
 
     editor = database.Editor()
@@ -18,7 +18,7 @@ def create_editor(editorName, fondationYear):
     session.add(editor)
     session.commit()
 
-def create_author(authorFirstName, authorLastName):
+def author_create(authorFirstName, authorLastName):
     session = Session()
 
     author = database.Author()
@@ -29,7 +29,7 @@ def create_author(authorFirstName, authorLastName):
     session.add(author)
     session.commit()
 
-def create_collection(name, editorName):
+def collection_create(name, editorName):
 
     session = Session()
 
@@ -43,7 +43,7 @@ def create_collection(name, editorName):
     session.add(collection)
     session.commit()
 
-def create_book(title, isbn, publicationYear, collectionName, authorFirstName, authorLastName):
+def book_create(title, isbn, publicationYear, collectionName, authorFirstName, authorLastName):
     session = Session()
 
     book = database.Book()
