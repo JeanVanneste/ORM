@@ -64,5 +64,21 @@ def book_create(title, isbn, publicationYear, collectionName, authorFirstName, a
     session.add(book)
     session.commit()
 
+
+def book_add_author(title, authorFirstName, authorLastName):
+    session = Session()
+
+    book = session.query(database.Book).\
+        filter(database.Book.title==title).\
+        one()
+    
+    author = session.query(database.Author).\
+        filter(and_(database.Author.firstName==authorFirstName, database.Author.lastName==authorLastName)).\
+        one()
+        
+    book.authors.append(author)
+
+    session.commit()
+
 if __name__ == "__main__":
     pass
