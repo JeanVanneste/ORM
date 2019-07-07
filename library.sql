@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Client :  localhost:3306
--- Généré le :  Sam 29 Juin 2019 à 00:33
+-- Généré le :  Dim 07 Juillet 2019 à 19:25
 -- Version du serveur :  5.7.26-0ubuntu0.18.04.1
 -- Version de PHP :  7.2.19-0ubuntu0.18.04.1
 
@@ -67,18 +67,6 @@ CREATE TABLE `books_authors` (
 -- --------------------------------------------------------
 
 --
--- Structure de la table `collection`
---
-
-CREATE TABLE `collection` (
-  `id` int(11) NOT NULL,
-  `name` varchar(100) NOT NULL,
-  `FK_editor` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
--- --------------------------------------------------------
-
---
 -- Structure de la table `collections`
 --
 
@@ -125,13 +113,6 @@ ALTER TABLE `books_authors`
   ADD KEY `authorId` (`authorId`);
 
 --
--- Index pour la table `collection`
---
-ALTER TABLE `collection`
-  ADD PRIMARY KEY (`id`),
-  ADD KEY `FK_editor` (`FK_editor`);
-
---
 -- Index pour la table `collections`
 --
 ALTER TABLE `collections`
@@ -159,11 +140,6 @@ ALTER TABLE `authors`
 ALTER TABLE `books`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT pour la table `collection`
---
-ALTER TABLE `collection`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
---
 -- AUTO_INCREMENT pour la table `collections`
 --
 ALTER TABLE `collections`
@@ -189,12 +165,6 @@ ALTER TABLE `books`
 ALTER TABLE `books_authors`
   ADD CONSTRAINT `books_authors_ibfk_1` FOREIGN KEY (`bookId`) REFERENCES `books` (`id`),
   ADD CONSTRAINT `books_authors_ibfk_2` FOREIGN KEY (`authorId`) REFERENCES `authors` (`id`);
-
---
--- Contraintes pour la table `collection`
---
-ALTER TABLE `collection`
-  ADD CONSTRAINT `collection_ibfk_1` FOREIGN KEY (`FK_editor`) REFERENCES `editors` (`id`);
 
 --
 -- Contraintes pour la table `collections`
