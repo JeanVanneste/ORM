@@ -2,6 +2,11 @@ from sqlalchemy import Column, Integer, String, ForeignKey, Table, create_engine
 #from sqlalchemy.dialects.mysql import YEAR
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import relationship
+import json
+
+with open ('config_db.json') as json_data_file:
+    data = json.load(json_data_file)
+    engine= 'mysql+pymysql://' + data['user'] + ':' + data['password'] + '@' + data['host'] + '/' + data['db']
 
 Base = declarative_base()
 
@@ -72,6 +77,5 @@ class Author(Base):
                            secondary=books_authors,
                            back_populates="authors")
 
-engine = create_engine(
-    'mysql+pymysql://admin:password@localhost/library', echo = False)
+engine = create_engine(engine, echo = False)
 Base.metadata.create_all(engine)

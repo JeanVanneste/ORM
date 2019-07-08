@@ -2,8 +2,13 @@ from sqlalchemy import create_engine, and_
 import database
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy.ext.declarative import declarative_base
+import json
 
-engine = create_engine('mysql+pymysql://admin:password@localhost/library', echo = True)
+with open ('config_db.json') as json_data_file:
+    data = json.load(json_data_file)
+    engine= 'mysql+pymysql://' + data['user'] + ':' + data['password'] + '@' + data['host'] + '/' + data['db']
+
+engine = create_engine('mysql+pymysql://admin:password@localhost/library', echo = False)
 Session = sessionmaker(engine)
 
 
