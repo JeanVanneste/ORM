@@ -1,4 +1,5 @@
 # Programme de gestion de bibliothèque
+*Jean Vanneste*
 
 ## Initialisation 
 1. Installer mysql ou mariadb sur le serveur
@@ -7,12 +8,12 @@ sudo apt install mysql
 ```
 2. Créer un utilisateur *admin* avec comme mot de passe *password* (Si vous souhaitez utiliser un autre profil, il suffit de modifier *config_db.json*)
 ```sql
-create user 'admin'@'localhost' identified by 'password';
-grant all on *.* TO 'admin'@'localhost';
+CREATE USER 'admin'@'localhost' IDENTIFIED BY 'password';
+GRANT ALL ON *.* TO 'admin'@'localhost';
 ```
 3. Créer la base de donnée *library* (ou autre à préciser dans *config_db.json*)
 ```sql
-create database library;
+CREATE DATABASE library;
 ```
 4. Installer les bibliothèques python requise 
 ```bash
@@ -36,8 +37,15 @@ Un livre peut avoir plusieurs auteurs et un auteur peut avoir écrit plusieurs l
 
 On ne peut indiquer qu'un seul auteur à la création d'un livre mais il est possible d'ajouter les auteurs restants par la suite.
 
- ## Fonctionnement 
-  - Le fichier **database.py** décrit la structure de la base de donnée. Elle permet de recréer les tables si celles sont inexistante dans la base de donnée et de créer les contraintes de clés étrangère. Elle mappe aussi les objets de l'application au données contenues dans la base.
-  - Le fichier **ORM.py** contient les différentes fonctions pour créer et interagir avec la base de données.
-  - Le fichier **populate_db.py** utilise *ORM.py* pour remplir quelques lignes des tables. 
-  - Le fichier **interface.py** est un script permettant un remplissage *user-friendly* de la base de données
+## Fonctionnement 
+
+- Le fichier **database.py** décrit la structure de la base de donnée. Elle permet de recréer les tables si celles sont inexistante dans la base de donnée et de créer les contraintes de clés étrangère. Elle mappe aussi les objets de l'application au données contenues dans la base.
+- Le fichier **ORM.py** contient les différentes fonctions pour créer et interagir avec la base de données.
+- Le fichier **populate_db.py** utilise *ORM.py* pour remplir quelques lignes des tables. 
+- Le fichier **interface.py** est un script permettant un remplissage *user-friendly* de la base de données
+
+## Schéma de la base de données
+
+![schema de la db][schema]
+
+[schema]: https://github.com/JeanVanneste/ORM/raw/master/pictures/Schema.png
