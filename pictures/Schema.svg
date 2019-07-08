@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg
+PUBLIC "-//W3C//DTD SVG 1.1//EN"
+       "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg viewBox="32 7 843 416" width="811px" height="409px" xmlns="http://www.w3.org/2000/svg" version="1.1">
+   <line x1="175" y1="132" x2="185" y2="132" style="stroke:#cb0;stroke-width:1;"/>
+   <line x1="422" y1="62" x2="432" y2="62" style="stroke:#cb0;stroke-width:1;"/>
+   <line x1="185" y1="132" x2="422" y2="62" style="stroke:#cb0;stroke-width:1;"/>
+   <line x1="182.5" y1="132" x2="178.96446609407" y2="135.53553390593" style="stroke:#cb0;stroke-width:2;"/>
+   <line x1="182.5" y1="132" x2="178.96446609407" y2="128.46446609407" style="stroke:#cb0;stroke-width:2;"/>
+   <line x1="427" y1="62" x2="423.46446609407" y2="65.535533905933" style="stroke:#cb0;stroke-width:2;"/>
+   <line x1="427" y1="62" x2="423.46446609407" y2="58.464466094067" style="stroke:#cb0;stroke-width:2;"/>
+   <line x1="285" y1="199" x2="275" y2="199" style="stroke:#b0b;stroke-width:1;"/>
+   <line x1="185" y1="52" x2="175" y2="52" style="stroke:#b0b;stroke-width:1;"/>
+   <line x1="275" y1="199" x2="185" y2="52" style="stroke:#b0b;stroke-width:1;"/>
+   <line x1="277.5" y1="199" x2="281.03553390593" y2="202.53553390593" style="stroke:#b0b;stroke-width:2;"/>
+   <line x1="277.5" y1="199" x2="281.03553390593" y2="195.46446609407" style="stroke:#b0b;stroke-width:2;"/>
+   <line x1="180" y1="52" x2="183.53553390593" y2="55.535533905933" style="stroke:#b0b;stroke-width:2;"/>
+   <line x1="180" y1="52" x2="183.53553390593" y2="48.464466094067" style="stroke:#b0b;stroke-width:2;"/>
+   <line x1="285" y1="219" x2="275" y2="219" style="stroke:#333;stroke-width:1;"/>
+   <line x1="141" y1="351" x2="131" y2="351" style="stroke:#333;stroke-width:1;"/>
+   <line x1="275" y1="219" x2="141" y2="351" style="stroke:#333;stroke-width:1;"/>
+   <line x1="277.5" y1="219" x2="281.03553390593" y2="222.53553390593" style="stroke:#333;stroke-width:2;"/>
+   <line x1="277.5" y1="219" x2="281.03553390593" y2="215.46446609407" style="stroke:#333;stroke-width:2;"/>
+   <line x1="136" y1="351" x2="139.53553390593" y2="354.53553390593" style="stroke:#333;stroke-width:2;"/>
+   <line x1="136" y1="351" x2="139.53553390593" y2="347.46446609407" style="stroke:#333;stroke-width:2;"/>
+   <line x1="517" y1="102" x2="527" y2="102" style="stroke:#cb0;stroke-width:1;"/>
+   <line x1="708" y1="52" x2="718" y2="52" style="stroke:#cb0;stroke-width:1;"/>
+   <line x1="527" y1="102" x2="708" y2="52" style="stroke:#cb0;stroke-width:1;"/>
+   <line x1="524.5" y1="102" x2="520.96446609407" y2="105.53553390593" style="stroke:#cb0;stroke-width:2;"/>
+   <line x1="524.5" y1="102" x2="520.96446609407" y2="98.464466094067" style="stroke:#cb0;stroke-width:2;"/>
+   <line x1="713" y1="52" x2="709.46446609407" y2="55.535533905933" style="stroke:#cb0;stroke-width:2;"/>
+   <line x1="713" y1="52" x2="709.46446609407" y2="48.464466094067" style="stroke:#cb0;stroke-width:2;"/>
+   <rect width="84" height="20" x="47" y="321" style="fill:#007;stroke:black;"/>
+   <text width="84" height="20" x="52" y="335" style="fill:#fff;" font-family="Arial" font-size="16px"> Author</text>
+   <rect width="84" height="20" x="47" y="341" style="fill:#aea;stroke:black;"/>
+   <text width="84" height="20" x="52" y="355" style="fill:black;" font-family="Arial" font-size="16px">id</text>
+   <rect width="84" height="20" x="47" y="361" style="fill:none;stroke:black;"/>
+   <text width="84" height="20" x="52" y="375" style="fill:black;" font-family="Arial" font-size="16px">FirstName</text>
+   <rect width="84" height="20" x="47" y="381" style="fill:none;stroke:black;"/>
+   <text width="84" height="20" x="52" y="395" style="fill:black;" font-family="Arial" font-size="16px">LastName</text>
+   <rect width="121" height="20" x="54" y="22" style="fill:#007;stroke:black;"/>
+   <text width="121" height="20" x="59" y="36" style="fill:#fff;" font-family="Arial" font-size="16px"> books</text>
+   <rect width="121" height="20" x="54" y="42" style="fill:#aea;stroke:black;"/>
+   <text width="121" height="20" x="59" y="56" style="fill:black;" font-family="Arial" font-size="16px">id</text>
+   <rect width="121" height="20" x="54" y="62" style="fill:none;stroke:black;"/>
+   <text width="121" height="20" x="59" y="76" style="fill:black;" font-family="Arial" font-size="16px">title</text>
+   <rect width="121" height="20" x="54" y="82" style="fill:none;stroke:black;"/>
+   <text width="121" height="20" x="59" y="96" style="fill:black;" font-family="Arial" font-size="16px">isbn</text>
+   <rect width="121" height="20" x="54" y="102" style="fill:none;stroke:black;"/>
+   <text width="121" height="20" x="59" y="116" style="fill:black;" font-family="Arial" font-size="16px">publicationYear</text>
+   <rect width="121" height="20" x="54" y="122" style="fill:none;stroke:black;"/>
+   <text width="121" height="20" x="59" y="136" style="fill:black;" font-family="Arial" font-size="16px">FK_collection</text>
+   <rect width="104" height="20" x="285" y="169" style="fill:#007;stroke:black;"/>
+   <text width="104" height="20" x="290" y="183" style="fill:#fff;" font-family="Arial" font-size="16px"> books_author</text>
+   <rect width="104" height="20" x="285" y="189" style="fill:#aea;stroke:black;"/>
+   <text width="104" height="20" x="290" y="203" style="fill:black;" font-family="Arial" font-size="16px">bookId</text>
+   <rect width="104" height="20" x="285" y="209" style="fill:#aea;stroke:black;"/>
+   <text width="104" height="20" x="290" y="223" style="fill:black;" font-family="Arial" font-size="16px">authorId</text>
+   <rect width="85" height="20" x="432" y="32" style="fill:#007;stroke:black;"/>
+   <text width="85" height="20" x="437" y="46" style="fill:#fff;" font-family="Arial" font-size="16px"> collection</text>
+   <rect width="85" height="20" x="432" y="52" style="fill:#aea;stroke:black;"/>
+   <text width="85" height="20" x="437" y="66" style="fill:black;" font-family="Arial" font-size="16px">id</text>
+   <rect width="85" height="20" x="432" y="72" style="fill:none;stroke:black;"/>
+   <text width="85" height="20" x="437" y="86" style="fill:black;" font-family="Arial" font-size="16px">name</text>
+   <rect width="85" height="20" x="432" y="92" style="fill:none;stroke:black;"/>
+   <text width="85" height="20" x="437" y="106" style="fill:black;" font-family="Arial" font-size="16px">FK_Editors</text>
+   <rect width="110" height="20" x="718" y="22" style="fill:#007;stroke:black;"/>
+   <text width="110" height="20" x="723" y="36" style="fill:#fff;" font-family="Arial" font-size="16px"> Editor</text>
+   <rect width="110" height="20" x="718" y="42" style="fill:#aea;stroke:black;"/>
+   <text width="110" height="20" x="723" y="56" style="fill:black;" font-family="Arial" font-size="16px">id</text>
+   <rect width="110" height="20" x="718" y="62" style="fill:none;stroke:black;"/>
+   <text width="110" height="20" x="723" y="76" style="fill:black;" font-family="Arial" font-size="16px">name</text>
+   <rect width="110" height="20" x="718" y="82" style="fill:none;stroke:black;"/>
+   <text width="110" height="20" x="723" y="96" style="fill:black;" font-family="Arial" font-size="16px">fondationYear</text>
+</svg>
