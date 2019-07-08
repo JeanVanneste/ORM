@@ -35,3 +35,9 @@ Pour créer un collection, son éditeur doit exister dans la db. Pour créer un 
 Un livre peut avoir plusieurs auteurs et un auteur peut avoir écrit plusieurs livres.
 
 On ne peut indiquer qu'un seul auteur à la création d'un livre mais il est possible d'ajouter les auteurs restants par la suite.
+
+ ## Fonctionnement 
+  - Le fichier **database.py** décrit la structure de la base de donnée. Elle permet de recréer les tables si celles sont inexistante dans la base de donnée et de créer les contraintes de clés étrangère. Elle mappe aussi les objets de l'application au données contenues dans la base.
+  - Le fichier **ORM.py** contient les différentes fonctions pour créer et interagir avec la base de données.
+  - Le fichier **populate_db.py** utilise *ORM.py* pour remplir quelques lignes des tables. 
+  - Le fichier **interface.py** est un script permettant un remplissage *user-friendly* de la base de données
