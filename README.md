@@ -5,12 +5,12 @@
 ```bash
 sudo apt install mysql
 ```
-2. Créer un utilisateur *admin* avec comme mot de passe *password*
+2. Créer un utilisateur *admin* avec comme mot de passe *password* (Si vous souhaitez utiliser un autre profil, il suffit de modifier *config_db.json*)
 ```sql
 create user 'admin'@'localhost' identified by 'password';
 grant all on *.* TO 'admin'@'localhost';
 ```
-3. Créer la base de donnée *library*
+3. Créer la base de donnée *library* (ou autre à préciser dans *config_db.json*)
 ```sql
 create database library;
 ```
