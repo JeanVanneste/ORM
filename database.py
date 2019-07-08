@@ -1,5 +1,4 @@
 from sqlalchemy import Column, Integer, String, ForeignKey, Table, create_engine
-#from sqlalchemy.dialects.mysql import YEAR
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import relationship
 import json
