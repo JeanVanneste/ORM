@@ -3,7 +3,7 @@ import database
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy.ext.declarative import declarative_base
 
-engine = create_engine('mysql+pymysql://jean:mcsuaptesbuf@localhost/library', echo = True)
+engine = create_engine('mysql+pymysql://admin:password@localhost/library', echo = True)
 Session = sessionmaker(engine)
 
 

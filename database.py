@@ -73,5 +73,5 @@ class Author(Base):
                            back_populates="authors")
 
 engine = create_engine(
-    'mysql+pymysql://jean:mcsuaptesbuf@localhost/library', echo = False)
+    'mysql+pymysql://admin:password@localhost/library', echo = False)
 Base.metadata.create_all(engine)
