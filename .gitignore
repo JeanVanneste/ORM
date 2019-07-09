@@ -6,3 +6,5 @@ include/
 venv/
 pyvenv.cfg
 __pycache__/
+
+tmp/
