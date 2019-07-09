@@ -42,7 +42,6 @@ if __name__ == "__main__":
         print("3. Créer un auteur")
         print("4. Créer un livre")
         print("5. Ajouter un auteur à un livre")
-
         option = input()
 
         if (option == "1") : create_editor()
@@ -52,4 +51,5 @@ if __name__ == "__main__":
         elif (option == "5") : add_author()
         else: 
             print("Option invalide")
+            print("Au revoir")
             break
